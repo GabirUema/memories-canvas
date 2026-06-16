@@ -36,24 +36,16 @@ lib/
 
 ## Como rodar
 
-Esse repositório tem só o código (a pasta `lib/`, o `pubspec.yaml` e os
-testes). As pastas `android/`, `ios/` etc. são geradas pelo Flutter, então
-depois de baixar é só rodar:
+O projeto já vem com as pastas `android/` e `ios/`, então é só:
 
 ```bash
-flutter create .     # gera android/ios/web sem mexer no lib/
 flutter pub get
 flutter run
 ```
 
-No iOS, pra galeria funcionar, adicione no `ios/Runner/Info.plist`:
-
-```xml
-<key>NSPhotoLibraryUsageDescription</key>
-<string>O app precisa acessar suas fotos pra criar as memórias.</string>
-```
-
-No Android as versões novas do image_picker não precisam de permissão extra.
+Testado com o Flutter 3.24.5. A permissão de acesso à galeria no iOS já
+está configurada no `Info.plist`, e no Android as versões novas do
+image_picker não precisam de permissão extra.
 
 ## Testes
 
