@@ -1,0 +1,35 @@
+name: memories_canvas
+description: "MemoriesCanvas — diário visual e interativo para registrar momentos, viagens e eventos marcantes. Persistência feita na unha (filesystem + JSON)."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Ícones no estilo iOS (vem por padrão no template)
+  cupertino_icons: ^1.0.6
+
+  # Seleção de imagens da galeria
+  image_picker: ^1.1.2
+
+  # Acesso ao diretório local definitivo do app
+  path_provider: ^2.1.4
+
+  # Manipulação de caminhos de arquivo (join, extension, etc.)
+  path: ^1.9.0
+
+  # Formatação de datas em pt_BR
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
